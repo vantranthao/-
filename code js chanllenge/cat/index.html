@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="name-color">This is the funny</h1>
+        <div class="img">
+            <img id="img" src="img/pikachuuuu.jpg" alt="">
+        </div>
+        <button id="btn">Get next photo</button>
+        <p>She currently has her own name. Please help her!</p>
+    </div>
+
+    <script>
+        // random background color
+        // get ID
+        let button = document.getElementById('btn');
+        let text = document.getElementById('name-color');
+        let img = document.getElementById('img');
+
+        // function change color
+        function colorBack() {
+            let color = "0123456789ABCDEF";
+            let hex = "#";
+
+            for (let i = 0; i < 6; i++) {
+                hex += color[Math.floor(Math.random() * 16)];
+            }
+            console.log(hex);
+            document.body.style.background = hex;
+            text.innerHTML = hex;
+        }
+        button.addEventListener('click', colorBack);
+
+
+
+        // next photo
+        console.dir(img);
+        let listIMG = ['bear.jpg', 'cat.jpg', 'dcs.jpg', 'pikachuuuu.jpg', 'vietnam.jpg'];
+        button.addEventListener('click', () => {
+            document.img.
+        })
+    </script>
+</body>
+
+</html>

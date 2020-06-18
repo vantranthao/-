@@ -1,0 +1,46 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: #FFA686;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+}
+
+h1 {
+    border-top: 2.5px solid black;
+    font-size: 60px;
+}
+img {
+    border-radius: 50%;
+    height: 500px;
+    margin: 10px auto;
+}
+
+button {
+    padding: 25px;
+    background-color: #0a97b0;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    font-family: 'Inconsolata', monospace;
+}
+
+button:hover {
+    background-color: #4f8a8b;
+    text-decoration: underline;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
